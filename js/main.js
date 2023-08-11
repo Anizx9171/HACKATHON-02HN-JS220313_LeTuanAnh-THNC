@@ -1,9 +1,7 @@
 let students = [
-    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn rnh", email: "anizx9171@gmail.com", phone: 398205122, country: 1024, gender: "Nam" },
-    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn dnh", email: "anizx9171@gmail.com", phone: 398205122, country: 1024, gender: "Nam" },
-    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn fnh", email: "anizx9171@gmail.com", phone: 398205122, country: 1024, gender: "Nam" },
-    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn anh", email: "anizx9171@gmail.com", phone: 398205122, country: 1024, gender: "Nam" },
-    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn inh", email: "anizx9171@gmail.com", phone: 398205122, country: 1024, gender: "Nam" }
+    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn rnh", email: "anizx9171@gmail.com", phone: '0398205122', country: 1024, gender: "Nam" },
+    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn dnh", email: "anizx9171@gmail.com", phone: '0198205122', country: 1024, gender: "Nam" },
+    { id: 1 + Math.round(Math.random() * 1000000), name: "Lê Tuấn anh", email: "anizx9171@gmail.com", phone: '0598205122', country: 1024, gender: "Nam" },
 ];
 
 let nameStudent = document.getElementById("name")
