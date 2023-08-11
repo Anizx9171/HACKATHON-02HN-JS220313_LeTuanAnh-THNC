@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="Container">
+        <h1>Danh sách học viên</h1>
+        <div class="search_box">
+            <input type="text" id="search_input">
+            <button onclick="search()" type="button">search</button>
+        </div>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Gender</th>
+                    <th>Hành động</th>
+                    <th><button onclick="arrange()" type="button">sắp xếp (alpha b)</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Lê tuấn anh</td>
+                    <td>Anizx9171@gmail.com</td>
+                    <td>0398205122</td>
+                    <td>1024</td>
+                    <td>Nam</td>
+                    <td class="acction">
+                        <a>Edit</a>
+                        | <a>Delete</a>
+
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <form id="form_push">
+        <h1>Thông tin học viên</h1>
+        <div class="box">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" placeholder="vui lòng nhập tên" required>
+        </div>
+        <div class="box">
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Vui lòng nhập email" required>
+        </div>
+        <div class="box">
+            <label for="name">Số điện thoại</label>
+            <input input type="text" name="phone" pattern="0[13579][0-9]{8}" id="phoneNumber"
+                placeholder="Vui lòng nhập số điện thoại" required>
+        </div>
+        <div class="box">
+            <label for="name">Quê quán</label>
+            <input type="text" placeholder="Vui lòng nhập quê quán" id="Countryside" required>
+        </div>
+        <div class="box">
+            <label>Giới tính</label>
+            <div class="sex">
+                <div>
+                    <input type="radio" name="gender" value="Nam" id="Male" checked="checked">
+                    <label for="Male">Nam</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="Nu" id="Female">
+                    <label for="Female">Nữ</label>
+                </div>
+            </div>
+        </div>
+        <button>Lưu lại</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
